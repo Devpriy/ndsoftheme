@@ -1,0 +1,162 @@
+/*
+Theme Name: NDsoftheme
+Theme URI: https://ndsoftdesing.com
+Author: ND Soft Design
+Author URI: https://ndsoftdesing.com
+Description: Custom WordPress Block Theme for NDsoftdesign.
+Version: 1.0.0
+Text Domain: ndsoftdesing
+*/
+
+/* ================================
+   NDsoftheme - Global Styles
+================================ */
+
+:root {
+	--nd-primary: #2563eb;
+	--nd-dark: #111827;
+	--nd-text: #334155;
+	--nd-light: #f8fafc;
+	--nd-border: #e2e8f0;
+	--nd-container: 1200px;
+}
+
+/* Global */
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--nd-text);
+	background: #ffffff;
+	line-height: 1.7;
+}
+
+a {
+	color: var(--nd-primary);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Main container */
+.wp-site-blocks {
+	width: 100%;
+}
+
+.nd-container {
+	width: min(100% - 40px, var(--nd-container));
+	margin-inline: auto;
+}
+
+/* Header */
+header {
+	border-bottom: 1px solid var(--nd-border);
+	background: #ffffff;
+}
+
+header .wp-block-group {
+	max-width: var(--nd-container);
+	margin-inline: auto;
+}
+
+/* Buttons */
+.wp-block-button__link {
+	background: var(--nd-primary);
+	border-radius: 8px;
+	padding: 12px 24px;
+	font-weight: 600;
+}
+
+.wp-block-button__link:hover {
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+/* Sections */
+section {
+	padding-block: 80px;
+}
+
+/* Footer */
+footer {
+	background: var(--nd-dark);
+	color: #ffffff;
+	padding-block: 50px;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	section {
+		padding-block: 50px;
+	}
+
+	h1 {
+		font-size: 42px !important;
+	}
+
+	h2 {
+		font-size: 32px !important;
+	}
+}
+
+/* ================================
+   NDsoftheme Header & Footer
+================================ */
+
+.nd-footer,
+.nd-footer p,
+.nd-footer h1,
+.nd-footer h2,
+.nd-footer h3,
+.nd-footer h4,
+.nd-footer a,
+.nd-footer .wp-block-site-title a {
+	color: #ffffff !important;
+}
+
+.nd-footer a:hover {
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.nd-footer .wp-block-navigation-item__content {
+	color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+	.nd-footer {
+		text-align: center;
+	}
+
+	.nd-footer .wp-block-group {
+		justify-content: center;
+	}
+}
+/* Footer contrast fix */
+
+.nd-footer {
+	background: #111827 !important;
+	color: #ffffff !important;
+}
+
+.nd-footer *,
+.nd-footer p,
+.nd-footer h1,
+.nd-footer h2,
+.nd-footer h3,
+.nd-footer h4,
+.nd-footer a,
+.nd-footer .wp-block-site-title,
+.nd-footer .wp-block-site-title a,
+.nd-footer .wp-block-navigation-item__content {
+	color: #ffffff !important;
+}
+
+.nd-footer .wp-block-separator {
+	opacity: 0.25;
+}

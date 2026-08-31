@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build/cache
+.cache/
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+
+# Logs
+*.log
+
+# Archives
+*.zip
+*.tar
+*.gz
